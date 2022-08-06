@@ -14,7 +14,7 @@ TESTING = sys.argv[1:2] == ['test']
 SECRET_KEY = 'something-secure'
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*',]
 
 # Application definition
 INSTALLED_APPS = [

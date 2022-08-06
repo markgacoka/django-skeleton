@@ -1,5 +1,14 @@
 from django.test import TestCase
+from django.conf import settings
 from .models import ExampleModel
+
+class TestHomepage(TestCase):
+    def test_debug_off(self):
+        self.assertFalse(settings.DEBUG)
+
+    def test_homepage(self):
+        r = self.client.get('/', follow=True)
+        self.assertEqual(r.status_code, 200)
 
 class TestExampleModel(TestCase):
     @classmethod

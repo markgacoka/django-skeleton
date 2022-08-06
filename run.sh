@@ -5,3 +5,6 @@ python manage.py migrate app
 python manage.py collectstatic --noinput --clear
 python manage.py test
 find . -type d -name __pycache__ -exec rm -rf {} \+
+
+clear
+sudo python3 manage.py runserver 0.0.0.0:80

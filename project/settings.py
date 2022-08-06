@@ -12,13 +12,12 @@ TESTING = sys.argv[1:2] == ['test']
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'something-secure'
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*',]
 
 # Application definition
 INSTALLED_APPS = [
-    'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
